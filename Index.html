@@ -1,0 +1,92 @@
+<!DOCTYPE html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novel Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Novel Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#genres">Genres</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#upload">Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Login Form -->
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- Genre Section -->
+    <section id="genres">
+      <h2>Genres</h2>
+      <div id="genre-list">
+        <!-- Genre buttons will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search">
+      <h2>Search for Novels</h2>
+      <input type="text" id="search-bar" placeholder="Search by title or author">
+      <button onclick="searchNovel()">Search</button>
+      <div id="search-results">
+        <!-- Search results will appear here -->
+      </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload">
+      <h2>Upload a Novel</h2>
+      <form id="upload-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter novel title" required>
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter author's name" required>
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" placeholder="Enter genre" required>
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" required>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" style="display: none;">
+      <h2>Payment Details</h2>
+      <p>Send payment to the following address:</p>
+      <p><strong>Address:</strong> 0x1234567890ABCDEF</p>
+      <p><strong>Network:</strong> Ethereum</p>
+      <button onclick="confirmPayment()">Confirm Payment</button>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" style="display: none;">
+      <h2>Download Novel</h2>
+      <p>Your payment has been confirmed. Click below to download your novel.</p>
+      <a id="download-link" href="#" download>Download Novel</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Online Novel Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>￼Enter
